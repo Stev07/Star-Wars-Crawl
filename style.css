@@ -1,0 +1,46 @@
+body, p, h1, h2{margin:0;padding:0;}
+
+.container{ 
+    height: 100vh;
+    background: url(images/night-sky-005-a-star-field-twinkles-in-a-night-sky-loop_hf3owvebl_thumbnail-full01.png);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    text-align: center;
+}
+
+.lorem{
+    color: #FFC200;
+    text-align: justify;
+    transform: perspective(280px) rotateX(25deg);
+    margin: 0 0 0 -400px;
+    width: 800px;
+    transform-origin: center bottom;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    animation: versLinfini 10s infinite;
+    top: auto;
+    bottom: 0;
+
+}
+.lorem p{
+    font-size: 2em;
+    line-height: 60px;
+}
+
+@keyframes versLinfini{
+    0% {top:68%;opacity:1 }
+    80% {opacity:1;}
+    100% {top: 0;opacity:0 }
+}
+
+@keyframes logo{
+    0%{opacity:1;}
+    100%{opacity:0;}
+}
